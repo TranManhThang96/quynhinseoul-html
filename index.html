@@ -1,13 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <section
+      id="header"
+      class="w-full h-[937px] bg-cover flex justify-center items-center"
+    >
+      <img src="./public/images/quynh-in-seoul.png" alt="quynh-in-seoul" />
+    </section>
+    <section class="w-full">
+      <p class="text-center">
+        “Nguyện dùng cả cuộc đời, tình yêu và cây bút,<br />
+        Đắp thêm một viên gạch nhỏ<br />
+        Đưa hai đất nước tôi yêu đến gần nhau hơn nữa”
+      </p>
+      <h3 class="text-center mt-[122px] font-[playfair]">
+        Các tác phẩm đã xuất bản & cộng tác xuất bản
+      </h3>
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
