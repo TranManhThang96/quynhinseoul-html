@@ -1,3 +1,9 @@
+@import './font.scss';
+
+.font-ibm {
+  font-family: 'IBMPlexSerif';
+}
+
 #header {
-  background-image: url('./public/images/header.webp');
+  background-image: url('./images/header.webp');
 }
