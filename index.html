@@ -10,9 +10,19 @@
   <body>
     <section
       id="header"
-      class="w-full h-[937px] bg-cover flex justify-center items-center bg-[url('/images/header.webp')]"
+      class="w-full pt-[36px] h-[389px] md:h-[937px] bg-cover flex justify-center items-start md:items-center bg-[url('/images/header-m.webp')] md:bg-[url('/images/header.webp')]"
     >
-      <img src="./images/quynh-in-seoul.png" alt="quynh-in-seoul" />
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/quynh-in-seoul-m.png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/quynh-in-seoul.png"
+        />
+        <img src="/images/quynh-in-seoul.png" alt="quynh in seoul" />
+      </picture>
     </section>
     <section class="w-full">
       <p
@@ -61,7 +71,7 @@
         "Quỳnh in Seoul"
       </h3>
       <div class="mt-[30px] md:hidden px-4">
-        <div class="border-b-[main] border-b border-solid">
+        <div class="border-b-[#B67949] border-b border-solid">
           <div>
             <button>2023</button>
             <p>
@@ -116,12 +126,174 @@
     <section
       class="w-full bg-[url('/images/update-monthy.webp')] bg-no-repeat bg-cover px-4"
     >
-      <section></section>
-      <section></section>
-      <section class="pb-[53px] flex flex-col items-center">
-        <h3 class="italic text-[22px] leading-7 text-center text-main">
-          Đối tác
+      <section class="grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <h3 class="text-[22px] leading-7 text-center text-main">
+            Những hoạt động khác
+          </h3>
+          <ul class="mt-[33px]">
+            <li
+              class="text-justify text-[14px] leading-7 font-ibm mt-4 pb-4 border-b-[#B67949] border-b border-dashed"
+            >
+              Giám khảo cuộc thi Hùng biện/Tranh biện Convice Us 2023 Đại Học
+              Ngoại Thương
+            </li>
+            <li
+              class="text-justify text-[14px] leading-7 font-ibm mt-4 pb-4 border-b-[#B67949] border-b border-dashed"
+            >
+              Đại Sứ Youth Speak Miền Trung
+            </li>
+            <li
+              class="text-justify text-[14px] leading-7 font-ibm mt-4 pb-4 border-b-[#B67949] border-b border-dashed"
+            >
+              Diễn Giả/Mentor “Phòng Nghệ Thuật” mảng Văn Học Polaris RMIT
+            </li>
+          </ul>
+        </div>
+        <div class="marquee-wrap">
+          <div class="marquee-overflow"></div>
+          <div class="marquee-column">
+            <div class="marquee">
+              <div class="marquee-item">
+                
+              </div>
+            </div>
+          </div>
+          <div class="marquee-overflow bottom"></div>
+        </div>
+      </section>
+      <section class="mt-[70px] mb-[113px]">
+        <h3 class="text-[22px] leading-7 text-center text-main">
+          Cập nhật hàng tháng
         </h3>
+        <div class="splide mt-[30px]" role="group">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev transition-all duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next transition-all duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-[139px] h-[139px] border-[10px] rounded-full border-main/20 overflow-hidden"
+                  >
+                    <img
+                      src="./images/update-month/abc.png"
+                      alt="abc"
+                      class="object-fill"
+                    />
+                  </div>
+                  <div class="mt-5 flex flex-col item-center">
+                    <h4 class="text-base text-main text-center font-ibm">
+                      Câu chuyện ở Quán Canh Hầm 24h
+                    </h4>
+                    <p
+                      class="text-center font-ibm font-[14px] leading-[22px] text-[#000]"
+                    >
+                      Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
+                      văn chia sẻ những câu chuyện về con người & văn hóa Hàn
+                      Quốc trong suốt 15 năm Tác giả sinh sống, làm việc và khám
+                      phá Hàn Quốc
+                    </p>
+                    <date class="text-center text-xl leading-7 text-main"
+                      >Thứ 2 - 08.04.2024</date
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-[139px] h-[139px] border-[10px] rounded-full border-main/20 overflow-hidden"
+                  >
+                    <img
+                      src="./images/update-month/abc.png"
+                      alt="abc"
+                      class="object-fill"
+                    />
+                  </div>
+                  <div class="mt-5 flex flex-col item-center">
+                    <h4 class="text-base text-main text-center font-ibm">
+                      Câu chuyện ở Quán Canh Hầm 24h
+                    </h4>
+                    <p
+                      class="text-center font-ibm font-[14px] leading-[22px] text-[#000]"
+                    >
+                      Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
+                      văn chia sẻ những câu chuyện về con người & văn hóa Hàn
+                      Quốc trong suốt 15 năm Tác giả sinh sống, làm việc và khám
+                      phá Hàn Quốc
+                    </p>
+                    <date class="text-center text-xl leading-7 text-main"
+                      >Thứ 2 - 08.04.2024</date
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-[139px] h-[139px] border-[10px] rounded-full border-main/20 overflow-hidden"
+                  >
+                    <img
+                      src="./images/update-month/abc.png"
+                      alt="abc"
+                      class="object-fill"
+                    />
+                  </div>
+                  <div class="mt-5 flex flex-col item-center">
+                    <h4 class="text-base text-main text-center font-ibm">
+                      Câu chuyện ở Quán Canh Hầm 24h
+                    </h4>
+                    <p
+                      class="text-center font-ibm font-[14px] leading-[22px] text-[#000]"
+                    >
+                      Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
+                      văn chia sẻ những câu chuyện về con người & văn hóa Hàn
+                      Quốc trong suốt 15 năm Tác giả sinh sống, làm việc và khám
+                      phá Hàn Quốc
+                    </p>
+                    <date class="text-center text-xl leading-7 text-main"
+                      >Thứ 2 - 08.04.2024</date
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="pb-[53px] flex flex-col items-center">
+        <h3 class="text-[22px] leading-7 text-center text-main">Đối tác</h3>
         <div class="w-[358px] h-[158px] mt-[34px]">
           <img src="/images/partner.webp" alt="partner" class="object-fill" />
         </div>
@@ -140,22 +312,22 @@
       <div class="mt-6 flex flex-col gap-y-5">
         <a
           href="#"
-          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
+          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] font-ibm text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
           >Facebook</a
         >
         <a
           href="#"
-          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
+          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] font-ibm text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
           >Instagram</a
         >
         <a
           href="#"
-          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
+          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] font-ibm text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
           >Youtube</a
         >
         <a
           href="#"
-          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
+          class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] font-ibm text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
           >Email: quynhpate@gmail.com</a
         >
       </div>

@@ -7,3 +7,47 @@
 .font-playfair {
   font-family: 'PlayfairDisplay';
 }
+
+.splide__arrow {
+  width: 46px !important;
+  height: 46px !important;
+  top: 20% !important;
+  background: #b67949 !important;
+  opacity: unset !important;
+  svg {
+    fill: #fff !important;
+  }
+  &:disabled {
+    background: #f9efdd !important;
+    svg {
+      fill: #b67949 !important;
+    }
+  }
+}
+
+.splide__pagination {
+  bottom: -39px !important;
+  width: 234px !important;
+  display: flex !important;
+  margin: auto !important;
+  li {
+    flex: 1;
+    button {
+      opacity: 1 !important;
+      border-top: 1px solid #b67949;
+      height: 0 !important;
+      width: 100% !important;
+      border-radius: unset !important;
+      &:focus {
+        outline: unset !important;
+      }
+    }
+    .splide__pagination__page {
+      &.is-active {
+        transform: unset !important;
+        border-top: 0 !important;
+        border-bottom: 4px solid #b67949;
+      }
+    }
+  }
+}
