@@ -9,13 +9,12 @@ var splide = new Splide('.splide', {
   autoplay: true,
   interval: 3000,
   perPage: 1,
-  rewind: true,
 });
 splide.mount();
 
 document.addEventListener('DOMContentLoaded', () => {
   const marquee1 = new marquee(document.getElementById('marquee1'), {
-    delayBeforeStart: 0,
+delayBeforeStart: 0,
     css3easing: 'ease-in',
     direction: 'down',
     duplicated: true,
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const marquee2 = new marquee(document.getElementById('marquee2'), {
-    delayBeforeStart: 0,
+delayBeforeStart: 0,
     css3easing: 'ease-in',
     direction: 'up',
     duplicated: true,
