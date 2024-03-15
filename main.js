@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     direction: 'down',
     duplicated: true,
     gap: 0,
-    duration: 4000000,
+    duration: 5000000,
     recalcResize: true,
   });
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     direction: 'up',
     duplicated: true,
     gap: 0,
-    duration: 4000000,
+    duration: 5000000,
     recalcResize: true,
   });
 
