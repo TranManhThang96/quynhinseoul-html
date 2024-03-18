@@ -14,7 +14,7 @@ splide.mount();
 
 document.addEventListener('DOMContentLoaded', () => {
   const marquee1 = new marquee(document.getElementById('marquee1'), {
-delayBeforeStart: 0,
+    delayBeforeStart: 0,
     css3easing: 'ease-in',
     direction: 'down',
     duplicated: true,
@@ -24,7 +24,7 @@ delayBeforeStart: 0,
   });
 
   const marquee2 = new marquee(document.getElementById('marquee2'), {
-delayBeforeStart: 0,
+    delayBeforeStart: 0,
     css3easing: 'ease-in',
     direction: 'up',
     duplicated: true,
@@ -40,3 +40,27 @@ delayBeforeStart: 0,
     marquee2.destroy();
   }, 50000);
 });
+
+// Khởi tạo marquee khi trang được tải
+window.addEventListener('DOMContentLoaded', function () {
+  startMarquee();
+});
+
+// Hàm bắt đầu marquee
+function startMarquee() {
+  var marquee = document.querySelector('.marquee');
+
+  // Thiết lập chiều dài của marquee
+  marquee.style.height = 326 + 'px';
+
+  // Sao chép nội dung của span vào cuối marquee
+  marquee.innerHTML += marquee.innerHTML;
+
+  // Hủy bỏ animation trước đó (nếu có)
+  marquee.style.animation = 'none';
+
+  // Đợi một chút rồi khởi động lại animation
+  setTimeout(function () {
+    marquee.style.animation = '';
+  }, 10);
+}

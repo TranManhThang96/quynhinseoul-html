@@ -90,3 +90,16 @@
 .box-shadow {
   box-shadow: -8px 4px 16px 4px rgb(0 0 0 / 20%);
 }
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
