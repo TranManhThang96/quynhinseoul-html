@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link
+      href="./node_modules/flowbite/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link href="./dist/tailwind.css" rel="stylesheet" />
   </head>
   <body>
@@ -923,12 +927,57 @@
           >Youtube</a
         >
         <a
-          href="#"
+          data-modal-target="contact-modal"
+          data-modal-toggle="contact-modal"
           class="w-[234px] h-[31px] rounded-2xl border border-main bg-transparent text-[12px] leading-[29px] font-ibm text-center text-main cursor-pointer hover:bg-main hover:border-none hover:text-white"
-          >Email: quynhpate@gmail.com</a
         >
+          Email: quynhpate@gmail.com
+        </a>
       </div>
     </footer>
+
+    <!-- Main modal -->
+    <div
+      id="contact-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative p-4 w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-[#EDE3D6] rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal body -->
+          <div class="p-12 md:p-12">
+            <form action="#">
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="bg-[#FFF9F4] border border-main rounded-2xl font-ibm text-main text-base focus:ring-0 focus:outline-none focus:border-main block w-full p-5"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <div class="mt-[20px]">
+                <textarea
+                  name="content"
+                  placeholder="Nội dung"
+                  class="bg-[#FFF9F4] border border-main rounded-2xl font-ibm text-main text-base focus:ring-0 focus:outline-none focus:border-main block w-full p-5"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="mt-[30px] bg-main rounded-full px-[70px] py-4 hover:border-0 focus:outline-none text-white font-ibm text-[18px] leading-6 text-center"
+              >
+                Gửi
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="snowflakes" aria-hidden="true">
       <div class="snowflake">
         <div class="inner">❅</div>
