@@ -121,6 +121,73 @@
   visibility: hidden;
 }
 
+.btn-timeline {
+  &.left {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 46%;
+      left: -80px;
+      width: 80px;
+      height: 12px;
+      background-image: url(/images/timeline-left.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &.right {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 46%;
+      right: -80px;
+      width: 80px;
+      height: 12px;
+      background-image: url(/images/timeline-right.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.time-line-row {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 49.5%;
+    width: 1px;
+    border-left: 1px dotted #b67949;
+  }
+  &.row-1 {
+    &:after {
+      height: 155px;
+      top: 75%;
+    }
+  }
+  &.row-2 {
+    &:after {
+      height: 94px;
+      top: 100%;
+    }
+  }
+  &.row-3 {
+    &:after {
+      height: 241px;
+      top: 55%;
+    }
+  }
+  &.row-4 {
+    &:after {
+      height: 210px;
+      top: 30%;
+    }
+  }
+}
+
 .snowflake {
   color: #fff;
   font-size: 1em;
