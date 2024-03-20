@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-timeline {
+    @apply w-[220px] h-[74px] border border-[main] rounded-[36px] text-[main] text-[35px];
+  }
+}
