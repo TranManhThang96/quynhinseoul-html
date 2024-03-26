@@ -5,12 +5,20 @@ import 'animate.css';
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-var splide = new Splide('.splide', {
+var splide = new Splide('#splide', {
+  autoplay: true,
+  interval: 3000,
+  perPage: 2
+});
+splide.mount();
+
+var splide2 = new Splide('#splide2', {
   autoplay: true,
   interval: 3000,
   perPage: 1,
 });
-splide.mount();
+splide2.mount();
+
 
 // scroll to element and add animated
 const elements = document.querySelectorAll('.animate__animated');
