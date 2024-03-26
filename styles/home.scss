@@ -1,4 +1,5 @@
 @import './font.scss';
+@import './breakpoint';
 
 .font-ibm {
   font-family: 'IBMPlexSerif';
@@ -6,6 +7,42 @@
 
 .font-playfair {
   font-family: 'PlayfairDisplay';
+}
+
+#splide {
+  .splide__arrow {
+    width: 46px !important;
+    height: 46px !important;
+    top: 20% !important;
+    background: #b67949 !important;
+    opacity: unset !important;
+    svg {
+      fill: #fff !important;
+    }
+    &:disabled {
+      background: #f9efdd !important;
+      svg {
+        fill: #b67949 !important;
+      }
+    }
+
+    @include screen(md) {
+      top: 45% !important;
+
+      &.splide__arrow--prev {
+        left: -100px;
+      }
+      &.splide__arrow--next {
+        right: -100px;
+      }
+    }
+  }
+
+  .splide__pagination {
+    @include screen(md) {
+      display: none;
+    }
+  }
 }
 
 #splide2 {
@@ -23,6 +60,10 @@
       svg {
         fill: #b67949 !important;
       }
+    }
+
+    @include screen(md) {
+      top: 45% !important;
     }
   }
 
@@ -50,6 +91,10 @@
           border-bottom: 4px solid #b67949;
         }
       }
+    }
+    @include screen(md) {
+      width: 600px !important;
+      bottom: -70px !important;
     }
   }
 }
@@ -130,8 +175,8 @@
       content: '';
       position: absolute;
       top: 46%;
-      left: -80px;
-      width: 80px;
+      left: -40px;
+      width: 40px;
       height: 12px;
       background-image: url(/images/timeline-left.svg);
       background-repeat: no-repeat;
@@ -144,8 +189,8 @@
       content: '';
       position: absolute;
       top: 46%;
-      right: -80px;
-      width: 80px;
+      right: -40px;
+      width: 40px;
       height: 12px;
       background-image: url(/images/timeline-right.svg);
       background-repeat: no-repeat;
