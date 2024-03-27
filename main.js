@@ -7,18 +7,19 @@ import '@splidejs/splide/css';
 
 var splide = new Splide('#splide', {
   autoplay: true,
-  interval: 3000,
-  perPage: 2
+  interval: 8000,
+  rewind: true,
+  perPage: 2,
 });
 splide.mount();
 
 var splide2 = new Splide('#splide2', {
   autoplay: true,
-  interval: 3000,
+  interval: 8000,
+  rewind: true,
   perPage: 1,
 });
 splide2.mount();
-
 
 // scroll to element and add animated
 const elements = document.querySelectorAll('.animate__animated');
@@ -64,7 +65,7 @@ const isElementInViewport = (element, isShowFirst = false) => {
     rect.top >= 0 &&
     rect.left >= 0 &&
     rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
+      (window.innerHeight || document.documentElement.clientHeight) + 400 &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 };
