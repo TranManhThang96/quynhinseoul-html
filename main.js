@@ -72,3 +72,11 @@ const isElementInViewport = (element, isShowFirst = false) => {
 
 window.addEventListener('DOMContentLoaded', handleShowFirst);
 window.addEventListener('scroll', handleScroll);
+
+const buttonViewMoreActivities = document.getElementById('view-more-activities');
+buttonViewMoreActivities.addEventListener('click', function(e) {
+  e.preventDefault();
+  const appendActivities = document.getElementById('activities-hidden').innerHTML;
+  document.getElementById('activities').insertAdjacentHTML('beforeend', appendActivities);
+  buttonViewMoreActivities.remove();
+})
