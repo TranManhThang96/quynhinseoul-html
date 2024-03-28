@@ -682,7 +682,7 @@
     </section>
 
     <section
-      class="w-full mt-[40px] mx-auto md:max-w-[1042px] md:pt-12 md:border-t-[1px] md:border-t-[#B67949] md:border-dashed"
+      class="w-full mt-[40px] mx-auto md:max-w-[1042px] md:pt-12 xl:border-t-[1px] xl:border-t-[#B67949] xl:border-dashed"
     >
       <h3
         class="text-center text-[22px] italic leading-[28px] text-main mx-auto font-semibold font-ibm md:text-3xl"
@@ -726,7 +726,7 @@
               >
               <div class="border-b-[#B67949] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm">
+            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
               Tản văn
               <span class="font-semibold"
                 >“Câu chuyện ở Quán Canh Hầm 24h” </span
@@ -750,7 +750,7 @@
               >
               <div class="border-b-[#B67949] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm">
+            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
               Tiểu thuyết “Băng ghế ngân hạnh” về tình yêu đẹp giữa Tiền bối Hàn
               Quốc & Du học sinh Việt Nam diễn ra tại Korea University, khắc họa
               đời sống du học ở một trong những trường Đại học top đầu Hàn Quốc;
@@ -777,7 +777,7 @@
               >
               <div class="border-b-[#B67949] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm">
+            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
               Tản văn “Đuổi theo một người tới 6 quốc gia: Chuyện đu Idol”
             </p>
           </article>
@@ -796,7 +796,7 @@
               >
               <div class="border-b-[#B67949] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm">
+            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
               Tiểu thuyết “7 ngày yêu lại từ đầu ở Busan”
             </p>
           </article>
@@ -815,7 +815,7 @@
               >
               <div class="border-b-[#B67949] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm">
+            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
               Tiểu thuyết “Bãi biển đen, trà xanh, cẩm tú cầu Jeju & Em”
             </p>
           </article>
@@ -963,18 +963,14 @@
       </div>
       <button
         id="view-more-activities"
-        class="w-[112px] h-[31px] mt-[30px] mx-auto flex justify-center bg-transparent border border-[#B67949] rounded-2xl text-main text-[12px] font-ibm hover:bg-main hover:text-white transition-all cursor-pointer"
+        class="w-[112px] h-[31px] mt-[30px] mx-auto flex justify-center items-center bg-transparent border border-[#B67949] rounded-2xl text-main text-[12px] font-ibm hover:bg-main hover:text-white transition-all cursor-pointer"
       >
         Xem thêm
       </button>
     </section>
 
     <section class="bg-[#EDE3D6] max-full py-5 hidden lg:block mt-[-1px]">
-      <div
-        class="splide mt-[30px] max-w-[1280px] mx-auto"
-        role="group"
-        id="splide"
-      >
+      <div class="splide mt-[30px] w-[75%] mx-auto" role="group" id="splide">
         <div class="splide__arrows">
           <button
             class="splide__arrow splide__arrow--prev transition-all duration-300"
@@ -1012,7 +1008,7 @@
           </button>
         </div>
         <div class="splide__track">
-          <ul class="splide__list">
+          <ul class="splide__list flex gap-x-10">
             <li class="splide__slide">
               <div class="flex flex-col gap-y-4 items-center">
                 <div class="flex gap-x-10">
@@ -1035,7 +1031,9 @@
                   </div>
                 </div>
                 <div class="h-[90px] flex flex-col justify-around">
-                  <p class="text-[26px] leading-7 text-main text-center px-10">
+                  <p
+                    class="md:text-base lg:text-xl xl:text-[26px] leading-7 text-main text-center md:px-6 lg:px-8 xl:px-10"
+                  >
                     Đêm giao lưu văn hóa Việt-Hàn 2023 Có sự tham gia của Tổng
                     Thống Hàn Quốc & Phu Nhân cùng PCT nước Việt Nam và các Bộ
                     Trưởng
@@ -1233,7 +1231,7 @@
         >
           <div class="mb-22[px]">
             <h3
-              class="text-[22px] leading-7 text-center text-main md:text-[48px]"
+              class="text-[22px] leading-7 text-center text-main md:text-[48px] md:leading-[56px]"
             >
               Những hoạt động khác
             </h3>
@@ -1378,12 +1376,12 @@
             </div>
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide">
+                <li class="splide__slide flex justify-center">
                   <div
-                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-12"
+                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-6 lg:gap-x-8 xl:gap-x-12 w-[70%]"
                   >
                     <div
-                      class="w-[139px] h-[139px] overflow-hidden md:w-[233px] md:h-[233px]"
+                      class="w-[139px] h-[139px] overflow-hidden md:w-[173px] md:h-[173px] lg:w-[203px] lg:h-[203px] xl:w-[233px] xl:h-[233px] flex-none"
                     >
                       <img
                         src="./images/update-month/abc.png"
@@ -1393,10 +1391,10 @@
                       />
                     </div>
                     <div
-                      class="mt-5 flex flex-col items-center md:items-start md:max-w-[430px] lg:max-w-[530px] xl:max-w-[630px] md:gap-y-4"
+                      class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
                     >
                       <h4
-                        class="text-base text-main text-center font-ibm md:text-[26px] md:leading-7"
+                        class="text-base text-main text-left font-ibm md:text-[26px] md:leading-7"
                       >
                         Câu chuyện ở Quán Canh Hầm 24h
                       </h4>
@@ -1415,12 +1413,12 @@
                     </div>
                   </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide flex justify-center">
                   <div
-                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-12"
+                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-6 lg:gap-x-8 xl:gap-x-12 w-[70%]"
                   >
                     <div
-                      class="w-[139px] h-[139px] overflow-hidden md:w-[233px] md:h-[233px]"
+                      class="w-[139px] h-[139px] overflow-hidden md:w-[173px] md:h-[173px] lg:w-[203px] lg:h-[203px] xl:w-[233px] xl:h-[233px] flex-none"
                     >
                       <img
                         src="./images/update-month/abc.png"
@@ -1430,10 +1428,10 @@
                       />
                     </div>
                     <div
-                      class="mt-5 flex flex-col items-center md:items-start md:max-w-[430px] lg:max-w-[530px] xl:max-w-[630px] md:gap-y-4"
+                      class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
                     >
                       <h4
-                        class="text-base text-main text-center font-ibm md:text-[26px] md:leading-7"
+                        class="text-base text-main text-left font-ibm md:text-[26px] md:leading-7"
                       >
                         Câu chuyện ở Quán Canh Hầm 24h
                       </h4>
@@ -1452,12 +1450,12 @@
                     </div>
                   </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide flex justify-center">
                   <div
-                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-12"
+                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-6 lg:gap-x-8 xl:gap-x-12 w-[70%]"
                   >
                     <div
-                      class="w-[139px] h-[139px] overflow-hidden md:w-[233px] md:h-[233px]"
+                      class="w-[139px] h-[139px] overflow-hidden md:w-[173px] md:h-[173px] lg:w-[203px] lg:h-[203px] xl:w-[233px] xl:h-[233px] flex-none"
                     >
                       <img
                         src="./images/update-month/abc.png"
@@ -1467,10 +1465,10 @@
                       />
                     </div>
                     <div
-                      class="mt-5 flex flex-col items-center md:items-start md:max-w-[430px] lg:max-w-[530px] xl:max-w-[630px] md:gap-y-4"
+                      class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
                     >
                       <h4
-                        class="text-base text-main text-center font-ibm md:text-[26px] md:leading-7"
+                        class="text-base text-main text-left font-ibm md:text-[26px] md:leading-7"
                       >
                         Câu chuyện ở Quán Canh Hầm 24h
                       </h4>
