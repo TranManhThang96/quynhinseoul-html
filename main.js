@@ -4,6 +4,25 @@ import 'animate.css';
 
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
+import marquee from 'vanilla-marquee';
+
+new marquee(document.getElementById('marquee1'), {
+  delayBeforeStart: 0,
+  direction: 'down',
+  duplicated: true,
+  gap: 0,
+  duration: 15000000,
+  startVisible: false,
+});
+
+new marquee(document.getElementById('marquee2'), {
+  delayBeforeStart: 0,
+  direction: 'up',
+  duplicated: true,
+  gap: 0,
+  duration: 15000000,
+  startVisible: false,
+});
 
 var splide = new Splide('#splide', {
   autoplay: true,
@@ -73,10 +92,15 @@ const isElementInViewport = (element, isShowFirst = false) => {
 window.addEventListener('DOMContentLoaded', handleShowFirst);
 window.addEventListener('scroll', handleScroll);
 
-const buttonViewMoreActivities = document.getElementById('view-more-activities');
-buttonViewMoreActivities.addEventListener('click', function(e) {
+const buttonViewMoreActivities = document.getElementById(
+  'view-more-activities'
+);
+buttonViewMoreActivities.addEventListener('click', function (e) {
   e.preventDefault();
-  const appendActivities = document.getElementById('activities-hidden').innerHTML;
-  document.getElementById('activities').insertAdjacentHTML('beforeend', appendActivities);
+  const appendActivities =
+    document.getElementById('activities-hidden').innerHTML;
+  document
+    .getElementById('activities')
+    .insertAdjacentHTML('beforeend', appendActivities);
   buttonViewMoreActivities.remove();
-})
+});
