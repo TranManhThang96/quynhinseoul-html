@@ -12,7 +12,8 @@ new marquee(document.getElementById('marquee1'), {
   duplicated: true,
   gap: 0,
   duration: 15000000,
-  startVisible: false,
+  startVisible: true,
+  pauseOnHover: false
 });
 
 new marquee(document.getElementById('marquee2'), {
@@ -21,7 +22,8 @@ new marquee(document.getElementById('marquee2'), {
   duplicated: true,
   gap: 0,
   duration: 15000000,
-  startVisible: false,
+  startVisible: true,
+  pauseOnHover: false
 });
 
 var splide = new Splide('#splide', {
