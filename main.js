@@ -11,9 +11,10 @@ new marquee(document.getElementById('marquee1'), {
   direction: 'down',
   duplicated: true,
   gap: 0,
-  duration: 15000000,
+  css3easing: 'ease',
+  duration: 50000000,
   startVisible: true,
-  pauseOnHover: false
+  pauseOnHover: false,
 });
 
 new marquee(document.getElementById('marquee2'), {
@@ -21,9 +22,10 @@ new marquee(document.getElementById('marquee2'), {
   direction: 'up',
   duplicated: true,
   gap: 0,
-  duration: 15000000,
+  css3easing: 'ease',
+  duration: 50000000,
   startVisible: true,
-  pauseOnHover: false
+  pauseOnHover: false,
 });
 
 var splide = new Splide('#splide', {
