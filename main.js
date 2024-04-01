@@ -51,8 +51,16 @@ const handleShowFirst = () => {
   addAnimation(true);
 };
 
+const backToTopElement = document.getElementById('back-to-top');
 const handleScroll = () => {
   addAnimation();
+  var scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop || 0;
+  if (scrollTop > 500) {
+    backToTopElement.classList.add('show');
+  } else {
+    backToTopElement.classList.remove('show');
+  }
 };
 
 const addAnimation = (isShowFirst = false) => {
@@ -107,4 +115,12 @@ buttonViewMoreActivities.addEventListener('click', function (e) {
     .getElementById('activities')
     .insertAdjacentHTML('beforeend', appendActivities);
   buttonViewMoreActivities.remove();
+});
+
+backToTopElement.addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 });
