@@ -8,7 +8,7 @@
     <title>Vite App</title>
     <link
       href="./node_modules/flowbite/dist/flowbite.min.css"
-      rel="stylesheet" 
+      rel="stylesheet"
     />
     <link href="./dist/tailwind.css" rel="stylesheet" />
   </head>
@@ -17,30 +17,15 @@
       id="header"
       class="w-full relative pt-[48px] h-[389px] md:h-[937px] bg-cover flex justify-center items-start md:items-center bg-[url('/images/header-m.png')] md:bg-[url('/images/header.png')]"
     >
-      <picture
-        class="animate__animated"
-        data-animation="zoomIn"
-        data-duration="4"
-      >
-        <source
-          media="(max-width: 767px)"
-          srcset="./images/quynh-in-seoul-m.png"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="/images/quynh-in-seoul.png"
-        />
-        <img
-          src="/images/quynh-in-seoul.png"
-          alt="quynh in seoul"
-          loading="lazy"
-        />
-      </picture>
+      <div class="mt-[-150px] flex flex-col items-end gap-4 text-white">
+        <p class="text-9xl">QinS-eoul</p>
+        <p class="uppercase font-lato">Author</p>
+      </div>
 
       <button
         id="dropdownLanguageButton"
         data-dropdown-toggle="dropdown"
-        class="bg-transparent border border-white border-solid hover:border-white rounded-3xl focus:outline-none text-[14px] leading-5 md:text-lg md:leading-6 text-white font-ibm font-normal px-2 py-1 md:px-4 md:py-2 text-center inline-flex items-center absolute right-2 top-2 lg:right-4 lg:top-4 xl:right-[160px] xl:top-[18px]"
+        class="bg-transparent border border-white border-solid hover:border-white rounded-3xl focus:outline-none text-[14px] leading-5 md:text-lg md:leading-6 text-white font-lato font-normal px-2 py-1 md:px-4 md:py-2 text-center inline-flex items-center absolute right-2 top-2 lg:right-4 lg:top-4 xl:right-[160px] xl:top-[18px]"
         type="button"
       >
         Language VI
@@ -73,7 +58,7 @@
           <li class="list-none">
             <a
               href="#"
-              class="flex items-center gap-x-2 px-4 py-2 text-main hover:text-main font-ibm hover:bg-gray-100"
+              class="flex items-center gap-x-2 px-4 py-2 text-main hover:text-main font-lato hover:bg-gray-100"
             >
               <img
                 src="./icons/vietnam.png"
@@ -87,7 +72,7 @@
           <li class="list-none">
             <a
               href="#"
-              class="flex items-center gap-x-2 px-4 py-2 text-main hover:text-main font-ibm hover:bg-gray-100"
+              class="flex items-center gap-x-2 px-4 py-2 text-main hover:text-main font-lato hover:bg-gray-100"
             >
               <img
                 src="./icons/south-korea.png"
@@ -101,7 +86,7 @@
           <li class="list-none">
             <a
               href="#"
-              class="flex items-center gap-x-2 px-4 py-2 text-main hover:text-main font-ibm hover:bg-gray-100"
+              class="flex items-center gap-x-2 px-4 py-2 text-main hover:text-main font-lato hover:bg-gray-100"
             >
               <img
                 src="./icons/united-kingdom.png"
@@ -140,7 +125,7 @@
             Hàn Quốc: Đi về phía Bình Minh (2015)
           </h3>
           <p
-            class="text-[13px] leading-[17px] font-ibm mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
+            class="text-[13px] leading-[17px] font-lato mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
           >
             Phát hành bởi Hoa Học Trò Top 1 Best-seller của Fahasa trong 7 tháng
             liên tiếp năm 2015
@@ -162,7 +147,7 @@
             Trẻ và Vụng Về (2016)
           </h3>
           <p
-            class="text-[13px] leading-[17px] font-ibm mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
+            class="text-[13px] leading-[17px] font-lato mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
           >
             Phát hành bởi Bloom Books
           </p>
@@ -183,7 +168,7 @@
             Seoul: Đến và Yêu (2017)
           </h3>
           <p
-            class="text-[13px] leading-[17px] font-ibm mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
+            class="text-[13px] leading-[17px] font-lato mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
           >
             Phát hành bởi Bloom Books Top 5 Best-seller trong 3 tháng liên tiếp
             năm 2017
@@ -205,7 +190,7 @@
             Oppa ơi, đưa em tới Hàn Quốc! (2018)
           </h3>
           <p
-            class="text-[13px] leading-[17px] font-ibm mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
+            class="text-[13px] leading-[17px] font-lato mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
           >
             Phát hành bởi Hoa Học Trò
           </p>
@@ -226,7 +211,7 @@
             Học làm người lớn (2020)
           </h3>
           <p
-            class="text-[13px] leading-[17px] font-ibm mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
+            class="text-[13px] leading-[17px] font-lato mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
           >
             Phát hành bởi Bloom Books
           </p>
@@ -247,7 +232,7 @@
             Nuôi một em bé trộm vía nhàn tênh (2020)
           </h3>
           <p
-            class="text-[13px] leading-[17px] font-ibm mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
+            class="text-[13px] leading-[17px] font-lato mx-auto mt-[10px] text-black text-center md:text-2xl md:leading-8 md:mt-[20px]"
           >
             Phát hành bởi Minh Châu Books
           </p>
@@ -257,10 +242,10 @@
 
     <section class="w-full mt-[40px] mx-auto md:mt-[220px]">
       <h3
-        class="text-center text-2xl italic leading-[30px] text-main mx-auto md:text-5xl md:leading-[60px] animate__animated"
+        class="text-center text-2xl italic leading-[30px] text-main2 mx-auto md:text-5xl md:leading-[60px] animate__animated"
         data-animation="pulse"
       >
-        "Quỳnh in Seoul"
+        "QinS-eoul"
       </h3>
       <div class="mt-[30px] xl:hidden px-4">
         <div
@@ -274,7 +259,7 @@
               2023
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
               Khách mời “Đêm giao lưu văn hóa Việt-Hàn” trong vai trò Tác giả
               Việt Nam, có sự tham gia của Tổng Thống Hàn Quốc & Phu Nhân cùng
@@ -313,7 +298,7 @@
               2021-2022
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
               Leader CLB Văn Học Việt-Hàn Trung Tâm Văn Hóa Hàn Quốc
             </p>
@@ -350,7 +335,7 @@
               2019
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
               Giám khảo Cuộc thi “Tạo tour tự túc - Hạnh Phúc đi Hàn” của Tổng
               Cục Du Lịch Hàn Quốc
@@ -369,7 +354,7 @@
               2017
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
               Diễn Giả_Mentor “Phòng Nghệ Thuật” mảng Văn Học Polaris RMIT
             </p>
@@ -406,7 +391,7 @@
               2016
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
               Founder/Cựu PGĐ của Trung Tâm Hàn Ngữ PMQ, trung tâm tiếng Hàn đầu
               tiên đạt tiêu chuẩn theo yêu cầu của Bộ Giáo Dục - Đào Tạo Hà Nội
@@ -437,13 +422,12 @@
               2015
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
               Tác giả Chuyên mục độc quyền “Thư từ Seoul” trên Báo Sinh viên
               Việt Nam – Hoa Học Trò<br />
               Khách mời KBS World Radio chuyên mục “Chuyện từ Seoul”: Blogger
-              Quỳnh in Seoul - đưa đất nước Hàn Quốc đến gần hơn với người Việt
-              Nam
+              QinS-eoul - đưa đất nước Hàn Quốc đến gần hơn với người Việt Nam
             </p>
           </div>
           <div class="mt-[13px] flex gap-x-[18px] justify-end">
@@ -478,10 +462,10 @@
               2014-2024
             </button>
             <p
-              class="text-[14px] font-ibm leading-[22px] basis-[calc(100%_-_108px)]"
+              class="text-[14px] font-lato leading-[22px] basis-[calc(100%_-_108px)]"
             >
-              Blog “Quỳnh in Seoul” 108.000 người theo dõi, 50.000 lượt truy cập
-              mỗi tuần chia sẻ đời sống du học, văn hóa, du lịch & con người Hàn
+              Blog “QinS-eoul” 108.000 người theo dõi, 50.000 lượt truy cập mỗi
+              tuần chia sẻ đời sống du học, văn hóa, du lịch & con người Hàn
               Quốc
             </p>
           </div>
@@ -516,7 +500,7 @@
           </div>
           <div class="flex-1">
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInRight"
             >
               Khách mời “Đêm giao lưu văn hóa Việt-Hàn” trong vai trò Tác giả
@@ -529,13 +513,13 @@
         <div class="flex gap-5 mt-[115px] time-line-row row-2">
           <div class="flex-1 flex flex-col gap-[58px] justify-center items-end">
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInLeft"
             >
               Leader CLB Văn Học Việt-Hàn Trung Tâm Văn Hóa Hàn Quốc
             </p>
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInLeft"
             >
               Giám khảo Cuộc thi “Tạo tour tự túc - Hạnh Phúc đi Hàn” của Tổng
@@ -608,13 +592,13 @@
           </div>
           <div class="flex-1 flex flex-col gap-[58px] justify-start">
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInRight"
             >
               Diễn Giả_Mentor “Phòng Nghệ Thuật” mảng Văn Học Polaris RMIT
             </p>
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInRight"
             >
               Founder/Cựu PGĐ của Trung Tâm Hàn Ngữ PMQ, trung tâm tiếng Hàn đầu
@@ -630,19 +614,18 @@
         <div class="flex gap-5 mt-[90px] time-line-row row-4">
           <div class="flex-1 flex flex-col gap-[58px] justify-start items-end">
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInLeft"
             >
               Tác giả Chuyên mục độc quyền “Thư từ Seoul” trên Báo Sinh viên
               Việt Nam – Hoa Học Trò
             </p>
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInLeft"
             >
               Khách mời KBS World Radio chuyên mục “Chuyện từ Seoul”: Blogger
-              Quỳnh in Seoul - đưa đất nước Hàn Quốc đến gần hơn với người Việt
-              Nam
+              QinS-eoul - đưa đất nước Hàn Quốc đến gần hơn với người Việt Nam
             </p>
           </div>
           <div
@@ -674,12 +657,11 @@
         <div class="flex gap-5 mt-[60px]">
           <div class="flex-1 flex justify-end">
             <p
-              class="font-ibm text-xl max-w-[450px] animate__animated"
+              class="font-lato text-xl max-w-[450px] animate__animated"
               data-animation="fadeInLeft"
             >
-              Blog “Quỳnh in Seoul” 108.000 người theo dõi, 50.000 lượt truy cập
-              mỗi tuần chia sẻ đời sống du học, văn hóa, du lịch & con người Hàn
-              Quốc
+              Blog “” 108.000 người theo dõi, 50.000 lượt truy cập mỗi tuần chia
+              sẻ đời sống du học, văn hóa, du lịch & con người Hàn Quốc
             </p>
           </div>
           <div
@@ -696,12 +678,12 @@
       class="w-full mt-[40px] mx-auto md:max-w-[1042px] md:pt-12 xl:border-t-[1px] xl:border-t-[#89B2DE] xl:border-dashed"
     >
       <h3
-        class="text-center text-[22px] italic leading-[28px] text-main mx-auto font-semibold font-ibm md:text-3xl"
+        class="text-center text-[22px] italic leading-[28px] text-main mx-auto font-semibold md:text-3xl"
       >
         Cử nhân Khoa Quốc Tế Học - Korea University
       </h3>
       <p
-        class="text-center text-base italic text-main mx-auto mt-[20px] font-ibm px-4 md:mt-[13px] md:text-xl"
+        class="text-center text-base italic mx-auto mt-[20px] font-lato px-4 md:mt-[13px] md:text-xl"
       >
         Gương mặt quen thuộc trong các chương trình quảng bá văn hóa, du lịch,
         văn học Việt Nam-Hàn Quốc của Tổng Cục Du Lịch Hàn Quốc KTO, Jeju
@@ -712,7 +694,7 @@
 
     <section class="w-full mt-[106px] md:mt-[298px]">
       <h3
-        class="text-center text-2xl text-main mx-auto md:text-[48px] md:mb-[80px] animate__animated"
+        class="text-center text-2xl text-main2 mx-auto md:text-[48px] md:mb-[80px] animate__animated"
         data-duration="1"
       >
         Dự án sắp tới
@@ -737,7 +719,7 @@
               >
               <div class="border-b-[#89B2DE] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
+            <p class="mt-4 text-sm leading-[22px] font-lato md:text-xl">
               Tản văn
               <span class="font-semibold"
                 >“Câu chuyện ở Quán Canh Hầm 24h” </span
@@ -761,7 +743,7 @@
               >
               <div class="border-b-[#89B2DE] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
+            <p class="mt-4 text-sm leading-[22px] font-lato md:text-xl">
               Tiểu thuyết “Băng ghế ngân hạnh” về tình yêu đẹp giữa Tiền bối Hàn
               Quốc & Du học sinh Việt Nam diễn ra tại Korea University, khắc họa
               đời sống du học ở một trong những trường Đại học top đầu Hàn Quốc;
@@ -788,7 +770,7 @@
               >
               <div class="border-b-[#89B2DE] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
+            <p class="mt-4 text-sm leading-[22px] font-lato md:text-xl">
               Tản văn “Đuổi theo một người tới 6 quốc gia: Chuyện đu Idol”
             </p>
           </article>
@@ -807,7 +789,7 @@
               >
               <div class="border-b-[#89B2DE] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
+            <p class="mt-4 text-sm leading-[22px] font-lato md:text-xl">
               Tiểu thuyết “7 ngày yêu lại từ đầu ở Busan”
             </p>
           </article>
@@ -826,7 +808,7 @@
               >
               <div class="border-b-[#89B2DE] border-b border-solid grow"></div>
             </div>
-            <p class="mt-4 text-sm leading-[22px] font-ibm md:text-xl">
+            <p class="mt-4 text-sm leading-[22px] font-lato md:text-xl">
               Tiểu thuyết “Bãi biển đen, trà xanh, cẩm tú cầu Jeju & Em”
             </p>
           </article>
@@ -834,11 +816,11 @@
       </div>
       <div
         id="project-footer-bg"
-        class="w-full bg-[url('/images/projects/m-pj-bg.webp')] bg-[#EDE3D6] bg-cover bg-no-repeat bg-bottom mt-[-1px] md:bg-[url('/images/projects/pj-bg.webp')] h-[150px]"
+        class="w-full bg-[url('/images/projects/m-pj-bg.webp')] bg-[#FFF7F5] bg-cover bg-no-repeat bg-bottom mt-[-1px] md:bg-[url('/images/projects/pj-bg.webp')] h-[150px]"
       ></div>
     </section>
 
-    <section class="bg-[#EDE3D6] w-full py-5 lg:hidden mt-[-1px]">
+    <section class="bg-[#FFF7F5] w-full py-5 lg:hidden mt-[-1px]">
       <div class="grid grid-cols-2 gap-x-4 gap-y-8 px-4" id="activities">
         <div class="col-span-2">
           <div class="flex gap-x-4">
@@ -874,7 +856,7 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -887,7 +869,7 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -900,7 +882,7 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -915,7 +897,7 @@
             />
           </div>
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -928,7 +910,7 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -941,7 +923,7 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -955,7 +937,7 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
@@ -967,20 +949,20 @@
             class="object-fill border-[8px] border-[#FEFEFE]"
           />
           <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-          <p class="text-xl leading-7 font-ibm">
+          <p class="text-xl leading-7 font-lato">
             Chương trình "Con yêu thầy giáo?"
           </p>
         </article>
       </div>
       <button
         id="view-more-activities"
-        class="w-[112px] h-[31px] mt-[30px] mx-auto flex justify-center items-center bg-transparent border border-[#89B2DE] rounded-2xl text-main text-[12px] font-ibm hover:bg-main hover:text-white transition-all cursor-pointer"
+        class="w-[112px] h-[31px] mt-[30px] mx-auto flex justify-center items-center bg-transparent border border-[#89B2DE] rounded-2xl text-main text-[12px] font-lato hover:bg-main hover:text-white transition-all cursor-pointer"
       >
         Xem thêm
       </button>
     </section>
 
-    <section class="bg-[#EDE3D6] max-full py-5 hidden lg:block mt-[-1px]">
+    <section class="bg-[#FFF7F5] max-full py-5 hidden lg:block mt-[-1px]">
       <div class="splide mt-[30px] w-[75%] mx-auto" role="group" id="splide">
         <div class="splide__arrows">
           <button
@@ -1061,7 +1043,7 @@
                   />
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1078,7 +1060,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1098,7 +1080,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1115,7 +1097,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1132,7 +1114,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1149,7 +1131,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1169,7 +1151,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1186,7 +1168,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1203,7 +1185,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1220,7 +1202,7 @@
                   </div>
                   <div class="h-[90px] flex flex-col justify-around">
                     <h3 class="text-[26px] leading-7 text-main">VTV1</h3>
-                    <p class="text-xl leading-7 font-ibm">
+                    <p class="text-xl leading-7 font-lato">
                       Chương trình "Con yêu thầy giáo?"
                     </p>
                   </div>
@@ -1234,7 +1216,7 @@
 
     <section
       id="update-monthly-bg"
-      class="w-full bg-[url('/images/update-month/m-update-monthly.webp')] bg-[#EDE3D6] bg-no-repeat bg-cover pt-[120px] mt-[-1px] md:bg-[url('/images/update-month/update-monthly.webp')]"
+      class="w-full bg-[url('/images/update-month/m-update-monthly.webp')] bg-[#FFF7F5] bg-no-repeat bg-cover pt-[120px] mt-[-1px] md:bg-[url('/images/update-month/update-monthly.webp')]"
     >
       <div class="max-w-[1280px] mx-auto px-4">
         <section
@@ -1242,24 +1224,24 @@
         >
           <div class="mb-22[px]">
             <h3
-              class="text-[22px] leading-7 text-center text-main md:text-[48px] md:leading-[56px]"
+              class="text-[22px] leading-7 text-center text-main2 md:text-[48px] md:leading-[56px]"
             >
               Những hoạt động khác
             </h3>
             <ul class="mt-[33px] md:mt-[62px]">
               <li
-                class="text-justify text-[14px] leading-7 font-ibm mt-4 pb-4 border-b-[#89B2DE] border-b border-dashed md:text-xl md:pb-8"
+                class="text-justify text-[14px] leading-7 font-lato mt-4 pb-4 border-b-[#89B2DE] border-b border-dashed md:text-xl md:pb-8"
               >
                 Giám khảo cuộc thi Hùng biện/Tranh biện Convice Us 2023 Đại Học
                 Ngoại Thương
               </li>
               <li
-                class="text-justify text-[14px] leading-7 font-ibm mt-4 pb-4 border-b-[#89B2DE] border-b border-dashed md:text-xl md:pb-8"
+                class="text-justify text-[14px] leading-7 font-lato mt-4 pb-4 border-b-[#89B2DE] border-b border-dashed md:text-xl md:pb-8"
               >
                 Đại Sứ Youth Speak Miền Trung
               </li>
               <li
-                class="text-justify text-[14px] leading-7 font-ibm mt-4 pb-4 border-b-[#89B2DE] border-b border-dashed md:text-xl md:pb-8"
+                class="text-justify text-[14px] leading-7 font-lato mt-4 pb-4 border-b-[#89B2DE] border-b border-dashed md:text-xl md:pb-8"
               >
                 Diễn Giả/Mentor “Phòng Nghệ Thuật” mảng Văn Học Polaris RMIT
               </li>
@@ -1304,7 +1286,7 @@
         </section>
         <section class="mt-[70px] mb-[113px] md:mb-[220px]">
           <h3
-            class="text-[22px] leading-7 text-center text-main md:text-[48px]"
+            class="text-[22px] leading-7 text-center text-main2 md:text-[48px]"
           >
             Cập nhật hàng tháng
           </h3>
@@ -1365,12 +1347,49 @@
                       class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
                     >
                       <h4
-                        class="text-base text-main text-left font-ibm md:text-[26px] md:leading-7"
+                        class="text-base text-main text-left font-lato md:text-[26px] md:leading-7"
                       >
                         Câu chuyện ở Quán Canh Hầm 24h
                       </h4>
                       <p
-                        class="text-center font-ibm font-[14px] leading-[22px] text-[#000] md:text-base md:text-start"
+                        class="text-center font-lato font-[14px] leading-[22px] text-[#000] md:text-base md:text-start"
+                      >
+                        Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
+                        văn chia sẻ những câu chuyện về con người & văn hóa Hàn
+                        Quốc trong suốt 15 năm Tác giả sinh sống, làm việc và
+                        khám phá Hàn Quốc
+                      </p>
+                      <date
+                        class="text-center font-lato text-xl leading-7 text-main md:text-[22px]"
+                        >Thứ 2 - 08.04.2024</date
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide flex justify-center">
+                  <div
+                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-6 lg:gap-x-8 xl:gap-x-12 w-[70%]"
+                  >
+                    <div
+                      class="w-[139px] h-[139px] overflow-hidden md:w-[173px] md:h-[173px] lg:w-[203px] lg:h-[203px] xl:w-[233px] xl:h-[233px] flex-none"
+                    >
+                      <img
+                        src="./images/update-month/abc.png"
+                        alt="abc"
+                        class="object-fill border-[10px] rounded-full border-main/20 h-[inherit]"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div
+                      class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
+                    >
+                      <h4
+                        class="text-base text-main text-left font-lato md:text-[26px] md:leading-7"
+                      >
+                        Câu chuyện ở Quán Canh Hầm 24h
+                      </h4>
+                      <p
+                        class="text-center font-lato font-[14px] leading-[22px] text-[#000] md:text-base md:text-start"
                       >
                         Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
                         văn chia sẻ những câu chuyện về con người & văn hóa Hàn
@@ -1402,49 +1421,12 @@
                       class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
                     >
                       <h4
-                        class="text-base text-main text-left font-ibm md:text-[26px] md:leading-7"
+                        class="text-base text-main text-left font-lato md:text-[26px] md:leading-7"
                       >
                         Câu chuyện ở Quán Canh Hầm 24h
                       </h4>
                       <p
-                        class="text-center font-ibm font-[14px] leading-[22px] text-[#000] md:text-base md:text-start"
-                      >
-                        Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
-                        văn chia sẻ những câu chuyện về con người & văn hóa Hàn
-                        Quốc trong suốt 15 năm Tác giả sinh sống, làm việc và
-                        khám phá Hàn Quốc
-                      </p>
-                      <date
-                        class="text-center text-xl leading-7 text-main md:text-[22px]"
-                        >Thứ 2 - 08.04.2024</date
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide flex justify-center">
-                  <div
-                    class="flex flex-col items-center md:flex-row md:justify-center md:gap-x-6 lg:gap-x-8 xl:gap-x-12 w-[70%]"
-                  >
-                    <div
-                      class="w-[139px] h-[139px] overflow-hidden md:w-[173px] md:h-[173px] lg:w-[203px] lg:h-[203px] xl:w-[233px] xl:h-[233px] flex-none"
-                    >
-                      <img
-                        src="./images/update-month/abc.png"
-                        alt="abc"
-                        class="object-fill border-[10px] rounded-full border-main/20 h-[inherit]"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div
-                      class="mt-5 flex flex-col items-center md:items-start md:gap-y-4"
-                    >
-                      <h4
-                        class="text-base text-main text-left font-ibm md:text-[26px] md:leading-7"
-                      >
-                        Câu chuyện ở Quán Canh Hầm 24h
-                      </h4>
-                      <p
-                        class="text-center font-ibm font-[14px] leading-[22px] text-[#000] md:text-base md:text-start"
+                        class="text-center font-lato font-[14px] leading-[22px] text-[#000] md:text-base md:text-start"
                       >
                         Tản văn “Câu chuyện ở Quán Canh Hầm 24h” gồm 30 bài tản
                         văn chia sẻ những câu chuyện về con người & văn hóa Hàn
@@ -1464,7 +1446,7 @@
         </section>
         <section class="pb-[53px] flex flex-col items-center md:pb-[103px]">
           <h3
-            class="text-[22px] leading-7 text-center text-main md:text-[48px]"
+            class="text-[22px] leading-7 text-center text-main2 md:text-[48px]"
           >
             Đối tác
           </h3>
@@ -1484,16 +1466,16 @@
     </section>
 
     <footer
-      class="w-full bg-[#EDE3D6] pt-[23px] pb-[44px] flex flex-col items-center md:gap-y-10 md:pt-[89px] md:pb-[112px]"
+      class="w-full bg-[#E9F3FF] pt-[23px] pb-[44px] flex flex-col items-center md:gap-y-10 md:pt-[89px] md:pb-[112px]"
     >
       <h3
         class="flex flex-col md:flex-row text-[22px] leading-7 text-center text-main md:text-[48px] md:gap-x-2"
       >
         <span>Liên hệ </span>
-        <span>tác giả <i>Quynh in Seoul</i></span>
+        <span>tác giả <i>QinS-eoul</i></span>
       </h3>
       <p
-        class="font-ibm font-light text-[14px] leading-[18px] mt-4 md:text-[25px]"
+        class="font-lato font-light text-[14px] leading-[18px] mt-4 md:text-[25px]"
       >
         "KNOWLEDGE IS POWER"
       </p>
@@ -1521,7 +1503,7 @@
               />
             </svg>
 
-            <span class="ml-2 font-ibm">Để lại lời nhắn</span>
+            <span class="ml-2 font-lato">Để lại lời nhắn</span>
           </a>
         </div>
 
@@ -1589,7 +1571,7 @@
     >
       <div class="relative p-4 w-full max-w-md max-h-full">
         <!-- Modal content -->
-        <div class="relative bg-[#EDE3D6] rounded-lg shadow">
+        <div class="relative bg-[#FFF7F5] rounded-lg shadow">
           <!-- Modal body -->
           <div class="p-12 md:p-12">
             <h3 class="text-[27px] text-main max-w-[455px] leading-8">
@@ -1601,7 +1583,7 @@
                   type="email"
                   name="email"
                   id="email"
-                  class="bg-[#FFF9F4] border border-main rounded-2xl font-ibm text-main text-base focus:ring-0 focus:outline-none focus:border-main block w-full p-5"
+                  class="bg-[#FFF9F4] border border-main rounded-2xl font-lato text-main text-base focus:ring-0 focus:outline-none focus:border-main block w-full p-5"
                   placeholder="Email address"
                   required
                 />
@@ -1610,12 +1592,12 @@
                 <textarea
                   name="content"
                   placeholder="Nội dung"
-                  class="bg-[#FFF9F4] border border-main rounded-2xl font-ibm text-main text-base focus:ring-0 focus:outline-none focus:border-main block w-full p-5"
+                  class="bg-[#FFF9F4] border border-main rounded-2xl font-lato text-main text-base focus:ring-0 focus:outline-none focus:border-main block w-full p-5"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="mt-[30px] bg-transparent rounded-full px-[70px] py-4 border border-[#89B2DE] text-main font-ibm text-lg leading-6 text-center focus:outline-none hover:bg-main hover:border-main hover:text-white"
+                class="mt-[30px] bg-transparent rounded-full px-[70px] py-4 border border-[#89B2DE] text-main font-lato text-lg leading-6 text-center focus:outline-none hover:bg-main hover:border-main hover:text-white"
               >
                 Gửi
               </button>
