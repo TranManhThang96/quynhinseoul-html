@@ -4,6 +4,6 @@
 
 @layer components {
   .btn-timeline {
-    @apply w-[160px] h-[54px] border border-[#B67949] rounded-[36px] text-[#B67949] text-[28px] flex items-center justify-center;
+    @apply w-[160px] h-[54px] border border-[#89B2DE] rounded-[36px] text-[#89B2DE] text-[28px] flex items-center justify-center;
   }
 }
