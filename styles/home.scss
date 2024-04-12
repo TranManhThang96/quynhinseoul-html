@@ -1,12 +1,12 @@
 @import './font.scss';
 @import './breakpoint';
 
-.font-ibm {
-  font-family: 'IBMPlexSerif';
+.font-oswald {
+  font-family: 'Oswald';
 }
 
-.font-playfair {
-  font-family: 'PlayfairDisplay';
+.font-lato {
+  font-family: 'Lato';
 }
 
 #splide {
@@ -14,7 +14,7 @@
     width: 46px !important;
     height: 46px !important;
     top: 20% !important;
-    background: #b67949 !important;
+    background: #89B2DE !important;
     opacity: unset !important;
     svg {
       fill: #fff !important;
@@ -22,7 +22,7 @@
     &:disabled {
       background: #f9efdd !important;
       svg {
-        fill: #b67949 !important;
+        fill: #89B2DE !important;
       }
     }
 
@@ -50,7 +50,7 @@
     width: 46px !important;
     height: 46px !important;
     top: 20% !important;
-    background: #b67949 !important;
+    background: #89B2DE !important;
     opacity: unset !important;
     svg {
       fill: #fff !important;
@@ -58,7 +58,7 @@
     &:disabled {
       background: #f9efdd !important;
       svg {
-        fill: #b67949 !important;
+        fill: #89B2DE !important;
       }
     }
 
@@ -76,7 +76,7 @@
       flex: 1;
       button {
         opacity: 1 !important;
-        border-top: 1px solid #b67949;
+        border-top: 1px solid #89B2DE;
         height: 0 !important;
         width: 100% !important;
         border-radius: unset !important;
@@ -88,7 +88,7 @@
         &.is-active {
           transform: unset !important;
           border-top: 0 !important;
-          border-bottom: 4px solid #b67949;
+          border-bottom: 4px solid #89B2DE;
         }
       }
     }
@@ -207,7 +207,7 @@
     position: absolute;
     left: 49.5%;
     width: 1px;
-    border-left: 1px dotted #b67949;
+    border-left: 1px dotted #89B2DE;
   }
   &.row-1 {
     &:after {
