@@ -14,15 +14,15 @@
     width: 46px !important;
     height: 46px !important;
     top: 20% !important;
-    background: #89B2DE !important;
+    background: #89b2de !important;
     opacity: unset !important;
     svg {
       fill: #fff !important;
     }
     &:disabled {
-      background: #f9efdd !important;
+      background: rgba(137, 178, 222, 0.2) !important;
       svg {
-        fill: #89B2DE !important;
+        fill: #89b2de !important;
       }
     }
 
@@ -50,15 +50,15 @@
     width: 46px !important;
     height: 46px !important;
     top: 20% !important;
-    background: #89B2DE !important;
+    background: #89b2de !important;
     opacity: unset !important;
     svg {
       fill: #fff !important;
     }
     &:disabled {
-      background: #f9efdd !important;
+      background: rgba(137, 178, 222, 0.2) !important;
       svg {
-        fill: #89B2DE !important;
+        fill: #89b2de !important;
       }
     }
 
@@ -76,7 +76,7 @@
       flex: 1;
       button {
         opacity: 1 !important;
-        border-top: 1px solid #89B2DE;
+        border-top: 1px solid #89b2de;
         height: 0 !important;
         width: 100% !important;
         border-radius: unset !important;
@@ -88,7 +88,7 @@
         &.is-active {
           transform: unset !important;
           border-top: 0 !important;
-          border-bottom: 4px solid #89B2DE;
+          border-bottom: 4px solid #89b2de;
         }
       }
     }
@@ -112,7 +112,7 @@
     height: 250px;
     background-image: linear-gradient(
       180deg,
-      rgba(182 121 73 / 70%),
+      rgba(137 178 222 / 70%),
       hsla(0, 0%, 100%, 0)
     );
   }
@@ -207,7 +207,7 @@
     position: absolute;
     left: 49.5%;
     width: 1px;
-    border-left: 1px dotted #89B2DE;
+    border-left: 1px dotted #89b2de;
   }
   &.row-1 {
     &:after {
@@ -239,7 +239,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F7A1A7;
+  background: #f7a1a7;
   cursor: pointer;
   border: 0;
   bottom: -40px;
