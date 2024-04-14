@@ -108,15 +108,18 @@ window.addEventListener('scroll', handleScroll);
 const buttonViewMoreActivities = document.getElementById(
   'view-more-activities'
 );
-buttonViewMoreActivities.addEventListener('click', function (e) {
-  e.preventDefault();
-  const appendActivities =
-    document.getElementById('activities-hidden').innerHTML;
-  document
-    .getElementById('activities')
-    .insertAdjacentHTML('beforeend', appendActivities);
-  buttonViewMoreActivities.remove();
-});
+
+if (buttonViewMoreActivities) {
+  buttonViewMoreActivities.addEventListener('click', function (e) {
+    e.preventDefault();
+    const appendActivities =
+      document.getElementById('activities-hidden').innerHTML;
+    document
+      .getElementById('activities')
+      .insertAdjacentHTML('beforeend', appendActivities);
+    buttonViewMoreActivities.remove();
+  });
+}
 
 backToTopElement.addEventListener('click', function (e) {
   e.preventDefault();
@@ -126,8 +129,9 @@ backToTopElement.addEventListener('click', function (e) {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  new TypeIt('#author-typeit', {
+function typeIt(id) {
+  console.log('typeIt::', id);
+  new TypeIt(`#${id}`, {
     lifeLike: false,
     speed: 0,
     loop: true,
@@ -169,4 +173,30 @@ document.addEventListener('DOMContentLoaded', function () {
     .pause(163)
     .delete(1)
     .go();
+}
+
+function typeAnimation(id) {
+  let element = document.getElementById(id);
+  console.log('element::', element);
+  if (element) {
+    typeIt(id);
+    return;
+  }
+  let timerCounter = 0;
+  const timer = setInterval(() => {
+    element = document.getElementById(id);
+    timerCounter++;
+    console.log('timerCounter::', timerCounter);
+    if (element) {
+      clearInterval(timer);
+      typeIt(id);
+    }
+    if (timerCounter > 100) {
+      clearInterval(timer);
+    }
+  }, 200);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  typeAnimation('author-typeit');
 });
