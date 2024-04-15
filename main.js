@@ -5,6 +5,7 @@ import 'animate.css';
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 import marquee from 'vanilla-marquee';
+import TypeIt from 'typeit';
 
 new marquee(document.getElementById('marquee1'), {
   delayBeforeStart: 0,
@@ -107,15 +108,18 @@ window.addEventListener('scroll', handleScroll);
 const buttonViewMoreActivities = document.getElementById(
   'view-more-activities'
 );
-buttonViewMoreActivities.addEventListener('click', function (e) {
-  e.preventDefault();
-  const appendActivities =
-    document.getElementById('activities-hidden').innerHTML;
-  document
-    .getElementById('activities')
-    .insertAdjacentHTML('beforeend', appendActivities);
-  buttonViewMoreActivities.remove();
-});
+
+if (buttonViewMoreActivities) {
+  buttonViewMoreActivities.addEventListener('click', function (e) {
+    e.preventDefault();
+    const appendActivities =
+      document.getElementById('activities-hidden').innerHTML;
+    document
+      .getElementById('activities')
+      .insertAdjacentHTML('beforeend', appendActivities);
+    buttonViewMoreActivities.remove();
+  });
+}
 
 backToTopElement.addEventListener('click', function (e) {
   e.preventDefault();
@@ -123,4 +127,76 @@ backToTopElement.addEventListener('click', function (e) {
     top: 0,
     behavior: 'smooth',
   });
+});
+
+function typeIt(id) {
+  console.log('typeIt::', id);
+  new TypeIt(`#${id}`, {
+    lifeLike: false,
+    speed: 0,
+    loop: true,
+    loopDelay: 1000,
+  })
+    .type('Q')
+    .pause(281)
+    .type('i')
+    .pause(175)
+    .type('n')
+    .pause(623)
+    .type('S')
+    .pause(347)
+    .type('-')
+    .pause(406)
+    .type('e')
+    .pause(141)
+    .type('o')
+    .pause(175)
+    .type('u')
+    .pause(280)
+    .type('l')
+    .pause(681)
+    .delete(1)
+    .pause(146)
+    .delete(1)
+    .pause(141)
+    .delete(1)
+    .pause(130)
+    .delete(1)
+    .pause(141)
+    .delete(1)
+    .pause(147)
+    .delete(1)
+    .pause(141)
+    .delete(1)
+    .pause(158)
+    .delete(1)
+    .pause(163)
+    .delete(1)
+    .go();
+}
+
+function typeAnimation(id) {
+  let element = document.getElementById(id);
+  console.log('element::', element);
+  if (element) {
+    typeIt(id);
+    return;
+  }
+  let timerCounter = 0;
+  const timer = setInterval(() => {
+    element = document.getElementById(id);
+    timerCounter++;
+    console.log('timerCounter::', timerCounter);
+    if (element) {
+      clearInterval(timer);
+      typeIt(id);
+    }
+    if (timerCounter > 100) {
+      clearInterval(timer);
+    }
+  }, 200);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  typeAnimation('author-typeit');
 });
