@@ -233,6 +233,12 @@
       top: 30%;
     }
   }
+  &.row-2024 {
+    &:after {
+      height: 220px;
+      top: 60%;
+    }
+  }
 }
 
 #back-to-top {
